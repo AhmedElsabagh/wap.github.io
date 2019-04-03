@@ -1,4 +1,54 @@
 body
 {
-    background-color: cadetblue;
+    background-color: darkslategray;
+}
+
+h1
+{
+    font-family:  Trebuchet MS;
+    font-size: 40px;
+    color: darkorange;
+}
+
+h2
+{
+    font-family: Courier ;
+    font-size: 25px;
+    color: darkorange;
+}
+
+p,li
+{
+    color: white;
+}
+
+ol { list-style-type: decimal; }
+
+.mood
+{
+height: 300px;
+width: 400px;
+}
+
+a{
+    color: firebrick;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+span
+{
+    color: brown;
+    font-style: italic;
+}
+
+p:first-letter {
+    float: left;
+    font-size: 45px;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 9px;
 }
