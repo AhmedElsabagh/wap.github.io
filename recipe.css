@@ -1,0 +1,67 @@
+h1 {
+  background-color: #F0F0F0;
+  color: #A4A400;
+  text-decoration: underline;
+  font-family: Lucida Sans Unicode, Helvetica, Arial;
+  text-align: center;
+}
+
+h2 {
+  background-color: #F0F0F0;
+  color: #A4A400;
+  text-decoration: underline;
+  font-family: Lucida Sans Unicode, Helvetica, Arial;
+}
+
+.comment {
+  background-color: #e8e87f;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.pull-right {
+  position: absolute;
+  right: 150px;
+}
+
+.gold-color {
+  color: #A4A400;
+}
+
+body {
+  color: #404040;
+  font-family: Georgia, Garamond;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.copyrights {
+  text-align: right;
+  font-family: monospace;
+}
+
+.author {
+  font-style: italic;
+}
