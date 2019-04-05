@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../StyleSheets/TaskList.css">
+  <title>Task List</title>
+</head>
+<body>
+<div class="header"><p>Task List</p></div>
+<form action="#" method="GET" enctype="" novalidate autocomplete>
+
+  <div>
+    <label for="taskName">Task</label>
+    <input id="taskName" type="text" size="80" title="Input task name" placeholder="Return Library books"/>
+  </div>
+  <div>
+    <label for="required">Required by</label>
+    <input type="date" required="required" id="required" name="requiredBy"/>
+  </div>
+  <div>
+    <label for="cat">Category</label>
+    <select id="cat" name="category">
+      <option value="Personal">Personal</option>
+      <option value="Work">Work</option>
+    </select>
+
+
+  </div>
+  <div>
+    <input type="button" value="Save Task"/>
+    <input type="button" value="Clear Task"/>
+  </div>
+
+  <hr/>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>due</th>
+      <th>Category</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>2013-10-14</td>
+      <td>Personal</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>2013-10-14</td>
+      <td>Personal</td>
+    </tr>
+    <tr>
+      <td>Ernst Handel</td>
+      <td>2013-10-14</td>
+      <td>Work</td>
+    </tr>
+  </table>
+  <div>
+    <input type="button" value="Add Task"/>
+  </div>
+</form>
+
+</body>
+</html>
