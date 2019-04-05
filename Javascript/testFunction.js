@@ -41,10 +41,11 @@ console.log("Expected output of isVowel('E') is True  " + myFunctionTest(true, f
 
 function sum() {
     let intA = [1,2,3,4];
-    intA.reduce(function(total,currentValue, index,intA)
+    let tot = intA.reduce(function(total,currentValue, index,array)
     {
-        total += currentValue;
+        return total + currentValue;
     });
+    return tot;
 }
 
 console.log("Expected output of sum() is 10  " + myFunctionTest(10, function () {
