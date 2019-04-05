@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="application/javascript">
+        function SwapFun() {
+            var img1 = document.getElementById("1");
+            var tempsrc = img1.src;
+            var tempalt = img1.alt;
+
+            if(tempalt == 1) {
+                img1.src = "https://www.todaysparent.com/wp-content/uploads/2017/02/babynames2017-1280x960.jpg";
+                img1.alt = 2;
+            }
+            else
+            {
+                img1.src = "https://media3.s-nbcnews.com/i/newscms/2015_22/577146/baby-stock-today-150526-tease_7ae06a79c925b4e8706ef6bc2e5d4ca1.jpg";
+                img1.alt = 1;
+            }
+        }
+    </script>
+    <title>Title</title>
+</head>
+<body>
+
+<img src="https://media3.s-nbcnews.com/i/newscms/2015_22/577146/baby-stock-today-150526-tease_7ae06a79c925b4e8706ef6bc2e5d4ca1.jpg"
+     alt="1" id="1" width=200 hieght=200/>
+
+<button name=Swap" onClick="SwapFun();" width=40 hieght=40>Swap</button>
+
+</body>
+</html>
