@@ -1,0 +1,14 @@
+.styleText
+{
+  font-weight: bold;
+  color: green;
+  text-decoration: underline;
+}
+
+.notStyleText
+{
+  font-weight: normal;
+  color: black;
+  text-decoration: unset;
+  background-image: none;
+}

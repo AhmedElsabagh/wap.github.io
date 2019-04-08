@@ -1,6 +1,6 @@
 window.onload = function(){
+    var timer;
     document.getElementById("clickbtn").onclick = function(){
-        var timer = null;
         if(timer == null)
         {
             timer = setInterval( function(){
@@ -12,4 +12,9 @@ window.onload = function(){
             timer = null;
         }
     }
+
+    document.getElementById("stopbtn").onclick = function() {
+        clearInterval(timer);
+    }
 }
+
