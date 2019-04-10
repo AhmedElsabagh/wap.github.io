@@ -5,6 +5,7 @@ let txtarea;
 let speed = 250;
 
 window.onload = function () {
+
     txtarea = document.getElementById("text-area");
     document.getElementById("start").onclick = startAnimate;
     document.getElementById("stop").onclick = stopAnimate;
@@ -21,12 +22,14 @@ window.onload = function () {
     }
 
     document.getElementById("turbo").onchange = function () {
+        clearInterval(textTimer);
         if(document.getElementById("turbo").checked) {
             speed = 50;
         }
         else{
             speed = 250;
         }
+        textTimer = setInterval(animateText, speed);
     }
 }
 

@@ -32,12 +32,12 @@ body{
     font-family: sans-serif;
     font-size: 14pt;
 
-    /*font-size: x-large;*/
-    /*font-size: large;*/
-    /*font-size: larger;*/
-    /*font-size: xx-large;*/
-    /*font-size: xx-small;*/
-
+    /*font-size: xx-small; !*Tiny*!*/
+    /*font-size: small; !*Small*!*/
+    /*font-size: medium; !*Medium*!*/
+    /*font-size: large; !*Large*!*/
+    /*font-size: x-large; !*Extra Large*!*/
+    /*font-size: xx-large; !*XXL*!*/
 }
 header{
     font-size: 32pt;
