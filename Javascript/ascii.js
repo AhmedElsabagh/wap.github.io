@@ -2,6 +2,7 @@ let textTimer;
 let index ;
 let frames;
 let txtarea;
+let speed = 250;
 
 window.onload = function () {
     txtarea = document.getElementById("text-area");
@@ -12,6 +13,21 @@ window.onload = function () {
         frames = txtarea.innerHTML.split("=====\n");
         index = 0;
     }
+
+    document.getElementById("fontsize").onchange = function () {
+        txtarea.style.fontSize  = document.getElementById("fontsize").value;
+        frames = txtarea.innerHTML.split("=====\n");
+        index = 0;
+    }
+
+    document.getElementById("turbo").onchange = function () {
+        if(document.getElementById("turbo").checked) {
+            speed = 50;
+        }
+        else{
+            speed = 250;
+        }
+    }
 }
 
 function startAnimate() {
@@ -19,7 +35,7 @@ function startAnimate() {
     document.getElementById("stop").disabled = false;
     document.getElementById("animation").disabled = true;
 
-    textTimer = setInterval(animateText, 250);
+    textTimer = setInterval(animateText, speed);
 }
 
 function animateText() {
